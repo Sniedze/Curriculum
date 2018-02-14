@@ -1,0 +1,33 @@
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    border: solid thin black;
+    color: black;
+    width: 22vw;
+    padding: 10vh;
+    margin: 65px;
+    border-radius: 10px;
+    font-size: 4em;
+    text-align: center
+}
+
+nav {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 79%;
+}
+
+.slogan {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
