@@ -1,8 +1,8 @@
     [{
-        "coreArea": "Business",
+        "name": "Business",
         "content": "The core area is intended to provide the students with the necessary qualifications to understand the commercial framework of the business and digital business models, apply digital user data and take an innovative approach to multimedia production. Students must understand the multimedia designer’s role in the value chain in a multimedia production and be able to plan, manage and carry out a multimedia production. ",
-        "knowledge": "development methods for multimedia production. Copyright and licensing methods in multimedia production",
-        "skils": "apply key tools and digital data to optimise multimedia production ",
+        "knowledge": ["Development methods for multimedia production.", "Copyright and licensing methods in multimedia production"],
+        "skills": "Apply key tools and digital data to optimise multimedia production ",
         "competences": "participate in teams as well as manage and adjust planning, control and quality assurance in the production of complex digital user interfaces ",
         "ect": 15
 }]
