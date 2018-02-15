@@ -1,3 +1,8 @@
+body,
+html {
+    margin: auto;
+}
+
 #logo {
     display: block;
     margin-left: auto;
@@ -45,6 +50,8 @@ nav a:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 0.5em;
 }
+
+
 
 .slogan {
     width: 60vw;
@@ -146,4 +153,63 @@ p {
 #semesters h2:first-child {
     grid-column: 2/4;
     grid-row-start: 1;
+}
+
+@media only screen and (max-width: 666px) {
+    /*///////////////////////////////////   SLOGAN IN ALL PAGES///////////////////////////*/
+    .slogan {
+        width: 80vw;
+        font-size: 1em;
+    }
+    /* ////////////////////////////////////////INDEX PAGE STUFF/////////////////*/
+    #links-to-pages a {
+        padding: 0;
+        margin: auto;
+        display: block;
+        font-size: 2em;
+        width: 80vw;
+        padding: 50px 0;
+        margin-bottom: 20px;
+    }
+    #links-to-pages {
+        display: block;
+    }
+    /*///////////////////////////CORE AREAS////////////////////////*/
+    #core-areas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+    #core-areas button:first-child {
+        grid-column-start: 1;
+        background-color: bisque;
+    }
+    button {
+        width: 30vw;
+        height: 85px;
+        margin: auto;
+        font-size: 1em;
+    }
+    #placeholder-cores {
+        display: block;
+    }
+    #placeholder-cores p{
+        font-size: 1em;
+    }
+    #placeholder-cores h2{
+        font-size: 1.2em;
+    }
+    #semesters{
+        display: block;
+    }
+    #semesters p{
+        font-size: 1em;
+    }
+    #semesters h2{
+        font-size: 1.2em;
+    }
+    h1{
+        font-size: 1.4em;
+    }
 }
