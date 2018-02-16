@@ -3,11 +3,15 @@ html {
     margin: auto;
 }
 
-#logo {
+.logos {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
+}
+
+#logo {
+    margin-top: 125px;
 }
 
 nav {
@@ -51,7 +55,9 @@ nav a:hover {
     grid-gap: 0.5em;
 }
 
-
+#links-to-pages a:hover {
+    background-color: #E9E2D8;
+}
 
 .slogan {
     width: 60vw;
@@ -102,7 +108,7 @@ p {
 #placeholder-cores {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 20px, 1fr;
     grid-gap: 0.5em;
     border: solid thin black;
     color: black;
@@ -132,7 +138,7 @@ p {
 #semesters {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 10px, 1fr;
     grid-gap: 0.5em;
     border: solid thin black;
     color: black;
@@ -179,7 +185,6 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-
     }
     #core-areas button:first-child {
         grid-column-start: 1;
@@ -194,22 +199,22 @@ p {
     #placeholder-cores {
         display: block;
     }
-    #placeholder-cores p{
+    #placeholder-cores p {
         font-size: 1em;
     }
-    #placeholder-cores h2{
+    #placeholder-cores h2 {
         font-size: 1.2em;
     }
-    #semesters{
+    #semesters {
         display: block;
     }
-    #semesters p{
+    #semesters p {
         font-size: 1em;
     }
-    #semesters h2{
+    #semesters h2 {
         font-size: 1.2em;
     }
-    h1{
+    h1 {
         font-size: 1.4em;
     }
 }
