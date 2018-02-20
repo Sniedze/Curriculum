@@ -80,7 +80,7 @@
 
     #navigation {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
         grid-gap: 0.5em;
     }
 
@@ -93,7 +93,7 @@
     #placeholder-cores {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(20px, 1fr);
         grid-gap: 0.5em;
         border: solid thin black;
         color: black;
@@ -110,12 +110,12 @@
         grid-row-start: 2;
     }
 
-    #placeholder-cores article:nth-child(3) {
+    #skills-container {
         grid-column: 5/8;
         grid-row-start: 2;
     }
 
-    #placeholder-cores article:nth-child(4) {
+    #competences-container {
         grid-column: 8/12;
         grid-row-start: 2;
     }
