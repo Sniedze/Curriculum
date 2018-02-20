@@ -23,10 +23,13 @@ function filter(area) {
     document.querySelectorAll("main section").forEach(section => {
 
         if (section.id == area) {
-            document.querySelector("button").classList.add("clicked");
+
+            currentTarget.document.querySelector("button").classList.add("clicked");
             section.classList.remove("hidden");
         } else {
+            console.log("work");
             section.classList.add("hidden");
+
         }
     })
 }
@@ -40,11 +43,20 @@ function show(data) {
         clone.querySelector(".name").textContent = element.coreArea;
         clone.querySelector(".content").textContent = element.content;
         clone.querySelector(".knowledge").textContent = "Knowledge";
-        clone.querySelector(".content-knowledge").textContent = element.knowledge;
+
         clone.querySelector(".skills").textContent = "Skills";
         clone.querySelector(".content-skills").textContent = element.skills;
         clone.querySelector(".competences").textContent = "Competences";
         clone.querySelector(".content-competences").textContent = element.competences;
+
+        var ul = document.createElement('ul');
+        clone.querySelector(".content-knowledge").appendChild(ul);
+
+        element.knowledge.forEach(function (name) {
+            var li = document.createElement('li');
+            ul.appendChild(li);
+            li.innerHTML += name;
+        });
 
         section.appendChild(clone);
 

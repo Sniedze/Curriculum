@@ -147,6 +147,10 @@ button {
     background-color: #F6F6F6;
 }
 
+.content-knowledge ul li {
+    list-style: none;
+}
+
 
 /*///////////////////////////Semesters////////////////////////*/
 
