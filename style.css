@@ -1,84 +1,94 @@
-    #logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 25px;
-    }
 
-    nav {
-        margin-left: 45px;
-        margin-top: 35px;
-        font-size: 2em;
-        display: inline-block;
-    }
+body,
+html {
+    margin: auto;
+}
 
-    nav a {
-        text-decoration: none;
-        color: black;
-        margin-left: 25px;
-        display: block;
-    }
+.logos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
 
-    nav a:hover {
-        color: darkgray;
-    }
+#logo {
+    margin-top: 125px;
+}
 
-    .hidden {
-        display: none;
-    }
+nav {
+    margin-left: 45px;
+    margin-top: 35px;
+    font-size: 2em;
+    display: inline-block;
+}
 
-    #links-to-pages a {
-        display: inline-block;
-        text-decoration: none;
-        border: solid thin black;
-        color: black;
-        width: 22vw;
-        padding: 10vh;
-        margin: 65px;
-        border-radius: 10px;
-        font-size: 4em;
-        text-align: center;
-    }
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 25px;
+    display: block;
+}
 
-    #links-to-pages a:first-child {
-        grid-column-start: 2;
-    }
+nav a:hover {
+    color: darkgray;
+}
 
-    #links-to-pages {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0.5em;
-    }
+#links-to-pages a {
+    display: inline-block;
+    text-decoration: none;
+    border: solid thin black;
+    color: black;
+    width: 22vw;
+    padding: 10vh;
+    margin: 65px;
+    border-radius: 10px;
+    font-size: 4em;
+    text-align: center;
+}
 
-    .slogan {
-        width: 60vw;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.5em;
-    }
+#links-to-pages a:first-child {
+    grid-column-start: 2;
+}
 
-    h1 {
-        font-size: 3em;
-        text-align: center;
-        margin-bottom: 5px;
-    }
+#links-to-pages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em;
+}
 
-    h2 {
-        text-align: center;
-        font-size: 2em;
-    }
+#links-to-pages a:hover {
+    background-color: #E9E2D8;
+}
 
-    button {
-        border: solid thin black;
-        color: black;
-        height: 15vh;
-        border-radius: 10px;
-        font-size: 2em;
-        background: white;
-        cursor: pointer;
-    }
+.slogan {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+}
 
-    #navigation {
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+button {
+    border: solid thin black;
+    color: black;
+    height: 15vh;
+    border-radius: 10px;
+    font-size: 2em;
+    background: white;
+    cursor: pointer;
+}
+
+#navigation {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
         grid-gap: 0.5em;
@@ -119,29 +129,86 @@
         grid-column: 8/12;
         grid-row-start: 2;
     }
+#semesters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10px, 1fr;
+    grid-gap: 0.5em;
+    border: solid thin black;
+    color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
 
-    #semesters {
+#ects {
+    grid-column: 2/3;
+    grid-row-start: 2;
+}
+
+#exams {
+    grid-column: 3/4;
+    grid-row-start: 2;
+}
+
+#semesters h2:first-child {
+    grid-column: 2/4;
+    grid-row-start: 1;
+}
+
+@media only screen and (max-width: 666px) {
+    /*///////////////////////////////////   SLOGAN IN ALL PAGES///////////////////////////*/
+    .slogan {
+        width: 80vw;
+        font-size: 1em;
+    }
+    /* ////////////////////////////////////////INDEX PAGE STUFF/////////////////*/
+    #links-to-pages a {
+        padding: 0;
+        margin: auto;
+        display: block;
+        font-size: 2em;
+        width: 80vw;
+        padding: 50px 0;
+        margin-bottom: 20px;
+    }
+    #links-to-pages {
+        display: block;
+    }
+    /*///////////////////////////CORE AREAS////////////////////////*/
+    #core-areas {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 0.5em;
-        border: solid thin black;
-        color: black;
-        border-radius: 10px;
-        margin-top: 20px;
     }
-
-    #ects {
-        grid-column: 2/3;
-        grid-row-start: 2;
+    #core-areas button:first-child {
+        grid-column-start: 1;
+        background-color: bisque;
     }
-
-    #exams {
-        grid-column: 3/4;
-        grid-row-start: 2;
+    button {
+        width: 30vw;
+        height: 85px;
+        margin: auto;
+        font-size: 1em;
     }
-
-    #semesters h2:first-child {
-        grid-column: 2/4;
-        grid-row-start: 1;
+    #placeholder-cores {
+        display: block;
     }
+    #placeholder-cores p {
+        font-size: 1em;
+    }
+    #placeholder-cores h2 {
+        font-size: 1.2em;
+    }
+    #semesters {
+        display: block;
+    }
+    #semesters p {
+        font-size: 1em;
+    }
+    #semesters h2 {
+        font-size: 1.2em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+}

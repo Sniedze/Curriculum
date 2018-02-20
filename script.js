@@ -1,3 +1,4 @@
+
 const main = document.querySelector("main");
 const template = document.querySelector("template").content;
 const nav = document.querySelector("#navigation");
