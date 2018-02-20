@@ -1,3 +1,4 @@
+
 body,
 html {
     margin: auto;
@@ -87,54 +88,47 @@ button {
     cursor: pointer;
 }
 
-#core-areas {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 0.5em;
-}
+#navigation {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+        grid-gap: 0.5em;
+    }
 
-#core-areas button:first-child {
-    grid-column-start: 2;
-    background-color: bisque;
-}
+    p {
+        font-size: 1.3em;
+        color: black;
+        margin-left: 10px;
+    }
 
-p {
-    font-size: 1.3em;
-    color: black;
-    margin-left: 10px;
-}
+    #placeholder-cores {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(20px, 1fr);
+        grid-gap: 0.5em;
+        border: solid thin black;
+        color: black;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
 
-#placeholder-cores {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 20px, 1fr;
-    grid-gap: 0.5em;
-    border: solid thin black;
-    color: black;
-    border-radius: 10px;
-    margin-top: 20px;
-}
+    #content-container {
+        grid-column: 3/11;
+    }
 
-#content-business {
-    grid-column: 3/11;
-}
+    #knowledge-container {
+        grid-column: 2/5;
+        grid-row-start: 2;
+    }
 
-#knowledge-business {
-    grid-column: 2/5;
-    grid-row-start: 2;
-}
+    #skills-container {
+        grid-column: 5/8;
+        grid-row-start: 2;
+    }
 
-#placeholder-cores section:nth-child(3) {
-    grid-column: 5/8;
-    grid-row-start: 2;
-}
-
-#placeholder-cores section:nth-child(4) {
-    grid-column: 8/12;
-    grid-row-start: 2;
-}
-
+    #competences-container {
+        grid-column: 8/12;
+        grid-row-start: 2;
+    }
 #semesters {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
