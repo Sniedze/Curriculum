@@ -3,7 +3,7 @@ const main = document.querySelector("main");
 const template = document.querySelector("template").content;
 const nav = document.querySelector("#nav");
 
-fetch(dataLink).then(result => result.json()).then(data => createContainers(data));
+fetch("jason.json").then(result => result.json()).then(data => createContainers(data));
 
 function createContainers(areas) {
     areas.forEach(area => {
@@ -47,16 +47,13 @@ function show(data) {
         const section = document.querySelector("#" + element.area);
         const clone = template.cloneNode(true);
         clone.querySelector(".name").textContent = element.coreArea;
-
         clone.querySelector(".content").textContent = element.content;
         clone.querySelector(".knowledge").textContent = "Knowledge";
-        clone.querySelector(".knowledge-content").textContent = element.knowledge;
+        clone.querySelector(".content-knowledge").textContent = element.knowledge;
         clone.querySelector(".skills").textContent = "Skills";
-        clone.querySelector(".skills-content").textContent = element.skills;
+        clone.querySelector(".content-skills").textContent = element.skills;
         clone.querySelector(".competences").textContent = "Competences";
         clone.querySelector(".content-competences").textContent = element.competences;
-
-
 
         section.appendChild(clone);
 
