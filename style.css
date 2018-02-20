@@ -114,6 +114,10 @@ button {
     margin-top: 20px;
 }
 
+#placeholder-cores p {
+    padding: 0 25px;
+}
+
 #content-container {
     grid-column: 2/14;
     background-color: #AB8FB2;
@@ -149,6 +153,9 @@ button {
 
 .content-knowledge ul li {
     list-style: none;
+    text-align: center;
+    padding-right: 40px;
+    padding-bottom: 25px;
 }
 
 
@@ -212,7 +219,6 @@ h2 {
 p {
     font-size: 1.3em;
     color: black;
-    margin: 0 25px 15px 25px;
 }
 
 .hidden {
