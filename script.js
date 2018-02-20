@@ -1,26 +1,26 @@
-const dataLink = "jason.json";
 const main = document.querySelector("main");
 const template = document.querySelector("template").content;
-const nav = document.querySelector("#nav");
+const nav = document.querySelector("#navigation");
 
 fetch("jason.json").then(result => result.json()).then(data => createContainers(data));
 
 function createContainers(areas) {
     areas.forEach(area => {
         const section = document.createElement("section");
+
         const button = document.createElement("button");
         section.id = area;
 
-        button.textContent = area;
-        section.appendChild(button);
+
+        button.textContent = area.coreArea;
+
         main.appendChild(section);
 
-        const a = document.createElement("a");
-        a.textContent = area;
 
-        a.href = "#";
-        a.addEventListener("click", () => filter(area));
-        nav.appendChild(a);
+
+        button.addEventListener("click", () => filter(area));
+        nav.appendChild(button);
+
     });
     fetch("jason.json").then(result => result.json()).then(data => show(data));
 }
@@ -44,7 +44,8 @@ function filter(area) {
 function show(data) {
 
     data.forEach(element => {
-        const section = document.querySelector("#" + element.area);
+        console.log("It works");
+        const section = document.querySelector("section")
         const clone = template.cloneNode(true);
         clone.querySelector(".name").textContent = element.coreArea;
         clone.querySelector(".content").textContent = element.content;
