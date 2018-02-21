@@ -10,7 +10,7 @@ function createContainers(semesters) {
 
         const button = document.createElement("button");
 
-        section.id = semester.coreArea;
+        section.id = semester.semester;
         button.textContent = semester.semester;
         if (button.textContent == "semesterone") {
             button.textContent = "1st Semester";

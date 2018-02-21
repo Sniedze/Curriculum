@@ -32,10 +32,6 @@ nav a {
     display: block;
 }
 
-nav a:hover {
-    color: darkgray;
-}
-
 
 /* ////////////////////////////////////////INDEX PAGE STUFF/////////////////*/
 
@@ -106,8 +102,14 @@ button {
     cursor: pointer;
     background-color: #6FA9B2;
 }
-#navigation button:focus{
+
+#navigation button:focus {
     background-color: #F6F6F6;
+}
+
+#navigation button:hover {
+    background-color: #F6F6F6;
+    opacity: 0.5;
 }
 
 #placeholder-cores {
@@ -151,6 +153,10 @@ button {
     margin-bottom: 45px;
 }
 
+.content {
+    text-align: center;
+}
+
 
 /*///////////////////////////CORE AREAS////////////////////////*/
 
@@ -171,7 +177,7 @@ button {
 #navigation button {
     border: solid thick #F6F6F6;
     color: black;
-    width: 22vw;
+    width: 20.9vw;
     height: 15vh;
     border-radius: 10px;
     font-size: 2em;
