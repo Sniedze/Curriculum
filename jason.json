@@ -1,86 +1,86 @@
    [
-    {
-    "coreArea":   "Business",
-    "content":    [
+       {
+           "coreArea": "Business",
+           "content": [
                    "Students will get the necessary qualifications to understanding of commercial framework of the business and digital business models.",
                    "Students will apply digital user data and take an innovative approach to multimedia production.",
                    "Students will understand the multimedia designer’s role in the value chain in a multimedia production and be able to plan, manage and carry out a multimedia production."],
-    "knowledge":  [
+           "knowledge": [
                    "Students will development methods for multimedia production.",
                    "Students will learn copyright and licensing methods in multimedia production.",
                    "They will also learn what company strategy  is and a company's  basis for multimedia production and the multimedia designer’ s position in the value chain.",
                    "They will learn about the company’s external environment, including its stakeholders, and the company’s resource base.",
                    "They will be taught tools and methods of project management how to apply them in practice and the use of data to optimise multimedia production including budgeting."],
-    "skills":     [
+           "skills": [
                    "Students should be able to apply  the above key tools and digital data to optimise multimedia production.",
                    "Students should also plan and evaluate project management and quality assurance in team-based multimedia productions.",
                    "Assess and analyse data and present solutions as a basis for innovative development of multimedia productions."
                   ],
-    "competences":[
+           "competences": [
                    "Students will join teams of other students and together manage and adjust planning, control and quality assurance in the production of complex digital user interfaces",
                    "Students should also be able to work independently on the same",
                    "Students should also be able to keep up to date and acquire new knowledge of business aspects that support the development of advanced digital multimedia production."
                   ],
-    "ects": 15
+           "ects": 15
     },
 
-    {
-    "coreArea":   "Communication & Presentation",
-    "content":    [
+       {
+           "coreArea": "Communication",
+           "content": [
                    "This core area is  designed to enable the students to understand digital media and create innovative digital user experiences. The students are capable of producing digital content and user- oriented communication."
                   ],
-    "knowledge":  [
+           "knowledge": [
                    "Students will gain know what content production theory and methods are",
                    "Will also know what information architecture for digital media is",
                    "Will be taught on various test methods,digital trends and how to plan user interaction and communication in various digital media productions."
                   ],
-    "skills":     [
+           "skills": [
                    "Students will be able to collect and apply  data  from users and situations of use in practice combine and apply key methods for planning and producing user - oriented content in team - based multimedia productions.",
                    "You will also apply key theory, method and tools to support digital user experiences, including test methods transform knowledge of current digital user trends into planning and development of user experiences in advanced digital media productions ",
                    "Students will be able to assess, adjust and present solutions for innovative communication in advanced digital media productions",
                    "You will be able to communicate and support the user  user experiences to stakeholders."
                   ],
-    "competences":[
+           "competences": [
                    "You will participate in teams and contribute to the production of digital, user-oriented content and create user experiences in complex digital user interfaces",
                    "You will be able to independently keep up to date and acquire new knowledge about the users’ application of technologies and media in an international digital mediascape "
                   ],
-    "ects": 15
+           "ects": 15
     },
 
-    {
-    "coreArea":   "Design & Visualisation",
-    "content":    [
+       {
+           "coreArea": "Design",
+           "content": [
                    "Design and Visualisation intends to enable the students to design and develop advanced digital user interfaces based on user-oriented design principles and incorporating international development trends within digital design."
                   ],
-    "knowledge":  [
+           "knowledge": [
                    "Students will  learn what composition and layout of digital design in multimedia production is",
                    "They will be taught about design processes and documentation of digital design in multimedia production and media types",
                    "They will learn about current digital exchange formats used in multimedia production",
                    "They will learn about relevant theories, tools and methodsof the design and development of user oriented design and user experiences",
                    "They will be taught methods for presenting data", "current international development trends in digital design."
                   ],
-    "skills":     [
+           "skills": [
                    "Students should be able to apply key design processes for multimedia production, including documentation of the design process",
                    "Students will aquire skill on  key methods and design processes, and present solutions for the production and communication of digital user interfaces",
                    "They will assess and post - process graphic material to ensure consistency of design and apply user friendly approach",
                    "Assess and select multimedia designs and components for  the development and production of advanced digital user experiences",
                    "They wil assess and apply key international development trends to design, develop, adjust and maintain advanced digital user interfaces."
                   ],
-    "competences":[
+           "competences": [
                    "Student will learn to  handle different types of material for the production of digital user interfaces",
                    "Will learn to handle process documentation and communication in relation to stakeholders",
                    "Will participate in teams and manage the design and development of digital user interfaces",
                    "Will also independently keep up to date and acquire new knowledge within international design trends, innovative technologies and advanced digital user interfaces."
                   ],
-    "ects": 15
+           "ects": 15
     },
 
-    {
-    "coreArea":   "Interaction Development",
-    "content":    [
+       {
+           "coreArea": "Interaction",
+           "content": [
                   "This core area will  equip students to  model, structure and develop complex digital user interfaces and to handle large data sets for presentation in digital user interfaces."
                   ],
-    "knowledge":  [
+           "knowledge": [
                    "Students will understand the structure and use of the Internet",
                    "Special emphasis will be laid on understanding client-server relationships and their impact on the development of digital user interfaces",
                    "Relevant technologies for developing digital user interfaces will be taught",
@@ -90,18 +90,18 @@
                    "Students will learn key and current libraries and frameworks for developing advanced digital user interfaces",
                    "Students will learn about  data structures, data formats and exchange of complex data sets with server."
                   ],
-    "skills":     [
+           "skills": [
                    "Student will be able to apply key technologies and development environments as well as version control methods in developing digital user interfaces",
                    "Students will apply key programming principles, including control structures, functions and variables for the development of digital user interfaces",
                    "Students will apply key technologies for handling and displaying content in the production of digital user interfaces",
                    "Students will assess, define, select and apply current libraries and frameworks for innovative development",
                    "Students will be able to  communicate the development process to stakeholders"
                   ],
-    "competences":[
+           "competences": [
                    "Student will be able to handle key technologies and methods for version control of multimedia productions",
                    "Work in teams with a view to developing digital user interfaces",
                    "Handle process documentation and communication in relation to stakeholders, including planning and documentation of multimedia productions as well as data exchange via digital user interfaces independently keep up to date and acquire new knowledge within the latest international technological trends and engage in innovative development of multimedia productions with special emphasis on the user interface."
                   ],
-    "ects": 15
+           "ects": 15
     }
 ]

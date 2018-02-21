@@ -7,7 +7,7 @@ fetch("jason.json").then(result => result.json()).then(data => createContainers(
 function createContainers(areas) {
     areas.forEach(area => {
         let section = document.createElement("section");
-        const button = document.createElement("a");
+        const button = document.createElement("button");
         section.id = area.coreArea;
         button.textContent = area.coreArea;
         main.appendChild(section);
@@ -22,9 +22,7 @@ function createContainers(areas) {
 function filter(area) {
     document.querySelectorAll("main section").forEach(section => {
 
-
-
-        if (section.id == area.coreArea) {
+        if (section.id == area) {
             section.classList.remove('hidden');
 
         } else {
@@ -39,7 +37,6 @@ function show(data) {
         console.log("It works");
         const section = document.querySelector("#" + element.coreArea);
         const clone = template.cloneNode(true);
-
         clone.querySelector(".name").textContent = element.coreArea;
         clone.querySelector(".content").textContent = element.content;
         clone.querySelector(".knowledge").textContent = "Knowledge";
@@ -55,6 +52,16 @@ function show(data) {
         clone.querySelector(".content-competences").appendChild(ul);
 
         element.knowledge.forEach(function (name) {
+            let li = document.createElement('li');
+            ul.appendChild(li);
+            li.innerHTML += name;
+        });
+        element.skills.forEach(function (name) {
+            let li = document.createElement('li');
+            ul.appendChild(li);
+            li.innerHTML += name;
+        });
+        element.competences.forEach(function (name) {
             let li = document.createElement('li');
             ul.appendChild(li);
             li.innerHTML += name;
