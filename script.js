@@ -12,6 +12,7 @@ function createContainers(areas) {
         section.id = area;
         button.textContent = area.coreArea;
         main.appendChild(section);
+        button.href = "#";
         button.addEventListener("click", () => filter(area));
         nav.appendChild(button);
     });
@@ -24,7 +25,7 @@ function filter(area) {
 
         if (section.id == area) {
 
-            currentTarget.document.querySelector("button").classList.add("clicked");
+            document.querySelector("button").classList.add("clicked");
             section.classList.remove("hidden");
         } else {
             console.log("work");
@@ -38,7 +39,7 @@ function show(data) {
 
     data.forEach(element => {
         console.log("It works");
-        const section = document.querySelector("section");
+        const section = document.querySelector("#" + element.coreArea);
         const clone = template.cloneNode(true);
         clone.querySelector(".name").textContent = element.coreArea;
         clone.querySelector(".content").textContent = element.content;
@@ -49,11 +50,13 @@ function show(data) {
         clone.querySelector(".competences").textContent = "Competences";
         clone.querySelector(".content-competences").textContent = element.competences;
 
-        var ul = document.createElement('ul');
+        let ul = document.createElement('ul');
         clone.querySelector(".content-knowledge").appendChild(ul);
+        clone.querySelector(".content-skills").appendChild(ul);
+        clone.querySelector(".content-competences").appendChild(ul);
 
         element.knowledge.forEach(function (name) {
-            var li = document.createElement('li');
+            let li = document.createElement('li');
             ul.appendChild(li);
             li.innerHTML += name;
         });
@@ -61,4 +64,5 @@ function show(data) {
         section.appendChild(clone);
 
     })
+
 }
