@@ -106,6 +106,9 @@ button {
     cursor: pointer;
     background-color: #6FA9B2;
 }
+#navigation button:focus{
+    background-color: #F6F6F6;
+}
 
 #placeholder-cores {
     display: grid;
@@ -202,10 +205,6 @@ button {
     background-color: #F6F6F6;
 }
 
-.clicked {
-    background-color: #F6F6F6;
-}
-
 #skills-container {
     grid-column: 6/10;
     grid-row-start: 2;
@@ -219,10 +218,6 @@ button {
     grid-row-start: 2;
     border: solid #6FA9B2;
     border-radius: 10px;
-    background-color: #F6F6F6;
-}
-
-.clicked {
     background-color: #F6F6F6;
 }
 
