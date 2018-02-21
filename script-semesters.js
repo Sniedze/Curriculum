@@ -1,5 +1,5 @@
 const main = document.querySelector("main");
-const template = document.querySelector("#template-semesters");
+const template = document.querySelector("template");
 const nav = document.querySelector("#navigation");
 
 fetch("jason-semesters.json").then(result => result.json()).then(data => createContainers(data));
@@ -10,7 +10,7 @@ function createContainers(semesters) {
 
         const button = document.createElement("button");
 
-        section.id = area.coreArea;
+        section.id = semester.coreArea;
         button.textContent = semester.semester;
         if (button.textContent == "semesterone") {
             button.textContent = "1st Semester";
@@ -35,7 +35,6 @@ function createContainers(semesters) {
 
 function filter(semester) {
     document.querySelectorAll("main section").forEach(section => {
-        const buttons = document.querySelectorAll("button");
 
         if (section.id == semester.semester) {
             section.classList.remove('hidden');
@@ -43,9 +42,7 @@ function filter(semester) {
         } else {
             section.classList.add('hidden');
         }
-        if (buttons.textContent == section.id) {
-            buttons.classList.add("clicked");
-        }
+
     })
 }
 
@@ -67,41 +64,25 @@ function show(data) {
             element.semester = "4th Semester";
         }
         clone.querySelector(".name").textContent = element.semester;
-
-        clone.querySelector(".content").textContent = element.content;
-        clone.querySelector(".knowledge").textContent = "Knowledge";
-
-        clone.querySelector(".skills").textContent = "Skills";
-        clone.querySelector(".content-skills").textContent = element.skills;
-        clone.querySelector(".competences").textContent = "Competences";
-        clone.querySelector(".content-competences").textContent = element.competences;
-
+        clone.querySelector(".ects-name").textContent = "Study Content";
+        clone.querySelector(".exams-name").textContent = "Exams";
 
         let ul = document.createElement('ul');
-        clone.querySelector(".content-knowledge").appendChild(ul);
+        clone.querySelector(".ects").appendChild(ul);
 
-        element.knowledge.forEach(function (name) {
+        element.content.forEach(function (name) {
             let li = document.createElement('li');
             ul.appendChild(li);
             li.innerHTML += name;
         });
         let ulist = document.createElement('ul');
-        clone.querySelector(".content-skills").appendChild(ulist);
+        clone.querySelector(".exams").appendChild(ulist);
 
-        element.skills.forEach(function (name) {
+        element.objective.forEach(function (name) {
             let list = document.createElement('li');
             ulist.appendChild(list);
             list.innerHTML += name;
         });
-        let ulis = document.createElement('ul');
-        clone.querySelector(".content-competences").appendChild(ulis);
-
-        element.competences.forEach(function (name) {
-            let lis = document.createElement('li');
-            ulis.appendChild(lis);
-            lis.innerHTML += name;
-        });
-
         section.appendChild(clone);
 
     })

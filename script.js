@@ -32,7 +32,6 @@ function createContainers(areas) {
 
 function filter(area) {
     document.querySelectorAll("main section").forEach(section => {
-        const buttons = document.querySelectorAll("button");
 
         if (section.id == area.coreArea) {
             section.classList.remove('hidden');
@@ -40,9 +39,7 @@ function filter(area) {
         } else {
             section.classList.add('hidden');
         }
-        if (buttons.textContent == section.id) {
-            buttons.classList.add("clicked");
-        }
+
     })
 }
 
@@ -64,11 +61,9 @@ function show(data) {
 
         clone.querySelector(".content").textContent = element.content;
         clone.querySelector(".knowledge").textContent = "Knowledge";
-
         clone.querySelector(".skills").textContent = "Skills";
-        clone.querySelector(".content-skills").textContent = element.skills;
         clone.querySelector(".competences").textContent = "Competences";
-        clone.querySelector(".content-competences").textContent = element.competences;
+
 
 
         let ul = document.createElement('ul');
