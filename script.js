@@ -23,11 +23,20 @@ function createContainers(areas) {
         }
         main.appendChild(section);
         button.href = "#";
-        button.addEventListener("click", () => filter(area));
         nav.appendChild(button);
+        let buttons = document.querySelectorAll("button");
+        buttons[0].focus();
+        filter(areas[0]); //////////////////////////<--- SHOW DATA NO 1 BY DEFAULT, ON LOAD/////////////////////////
+        button.addEventListener("click", () => filter(area));
+
+
     });
+
     fetch("jason.json").then(result => result.json()).then(data => show(data));
+
+
 }
+
 
 
 function filter(area) {

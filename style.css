@@ -106,6 +106,9 @@ button {
     cursor: pointer;
     background-color: #6FA9B2;
 }
+#navigation button:focus{
+    background-color: #F6F6F6;
+}
 
 #placeholder-cores {
     display: grid;
