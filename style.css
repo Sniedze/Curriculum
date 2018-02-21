@@ -3,11 +3,19 @@ html {
     margin: auto;
 }
 
-#logo {
+header {
+    background-color: #FFD3E8;
+    height: 105px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em;
+}
+
+.logos {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    padding-top: 20px;
 }
 
 nav {
@@ -28,12 +36,18 @@ nav a:hover {
     color: darkgray;
 }
 
+
+/* ////////////////////////////////////////INDEX PAGE STUFF/////////////////*/
+
+#body-home {
+    background-color: #F6F6F6;
+}
+
 #links-to-pages a {
-    display: inline-block;
+    width: 22vw;
     text-decoration: none;
     border: solid thin black;
     color: black;
-    width: 22vw;
     padding: 10vh;
     margin: 65px;
     border-radius: 10px;
@@ -43,15 +57,146 @@ nav a:hover {
 
 #links-to-pages a:first-child {
     grid-column-start: 2;
+    background-color: #6FA9B2;
+}
+
+#links-to-pages a:nth-child(2) {
+    grid-column-start: 3;
+    background-color: #CCC79A;
 }
 
 #links-to-pages {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.5em;
+    margin-top: 100px;
+}
+
+#links-to-pages a:hover {
+    background-color: #AB8FB2;
+}
+
+#body-home h1 {
+    margin-top: 65px;
+    margin-bottom: 45px;
 }
 
 
+/*///////////////////////////CORE AREAS////////////////////////*/
+
+#body-cores {
+    background-color: #6FA9B2;
+}
+
+#navigation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.5em;
+}
+
+#navigation button:first-child {
+    grid-column-start: 2;
+}
+
+button {
+    border: solid thick #F6F6F6;
+    color: black;
+    height: 15vh;
+    border-radius: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #6FA9B2;
+}
+
+#placeholder-cores {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(20px, 1fr);
+    margin-top: 20px;
+}
+
+#placeholder-cores p {
+    padding: 0 25px;
+}
+
+#content-container {
+    grid-column: 2/14;
+    background-color: #AB8FB2;
+}
+
+#knowledge-container {
+    grid-column: 2/6;
+    grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+}
+
+#skills-container {
+    grid-column: 6/10;
+    grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+}
+
+#competences-container {
+    grid-column: 10/14;
+    grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+}
+
+.clicked {
+    background-color: #F6F6F6;
+}
+
+.content-knowledge ul li {
+    list-style: none;
+    text-align: center;
+    padding-right: 40px;
+    padding-bottom: 25px;
+}
+
+
+/*///////////////////////////Semesters////////////////////////*/
+
+#body-semesters {
+    background-color: #CCC79A;
+}
+
+#semesters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10px, 1fr;
+    grid-gap: 0.5em;
+    border: solid thin black;
+    color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#body-semesters button {
+    background-color: #CCC79A;
+}
+
+#ects {
+    grid-column: 2/3;
+    grid-row-start: 2;
+}
+
+#exams {
+    grid-column: 3/4;
+    grid-row-start: 2;
+}
+
+#semesters h2:first-child {
+    grid-column: 2/4;
+    grid-row-start: 1;
+}
+
+
+/*///////////////////////////////////   SLOGAN IN ALL PAGES///////////////////////////*/
 
 .slogan {
     width: 60vw;
@@ -71,88 +216,13 @@ h2 {
     font-size: 2em;
 }
 
-button {
-    border: solid thin black;
-    color: black;
-    height: 15vh;
-    border-radius: 10px;
-    font-size: 2em;
-    background: white;
-    cursor: pointer;
-}
-
-#core-areas {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 0.5em;
-}
-
-#core-areas button:first-child {
-    grid-column-start: 2;
-    background-color: bisque;
-}
-
 p {
     font-size: 1.3em;
     color: black;
-    margin-left: 10px;
 }
 
-#placeholder-cores {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 0.5em;
-    border: solid thin black;
-    color: black;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-#content-business {
-    grid-column: 3/11;
-}
-
-#knowledge-business {
-    grid-column: 2/5;
-    grid-row-start: 2;
-}
-
-#placeholder-cores section:nth-child(3) {
-    grid-column: 5/8;
-    grid-row-start: 2;
-}
-
-#placeholder-cores section:nth-child(4) {
-    grid-column: 8/12;
-    grid-row-start: 2;
-}
-
-#semesters {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 0.5em;
-    border: solid thin black;
-    color: black;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-#ects {
-    grid-column: 2/3;
-    grid-row-start: 2;
-}
-
-#exams {
-    grid-column: 3/4;
-    grid-row-start: 2;
-}
-
-#semesters h2:first-child {
-    grid-column: 2/4;
-    grid-row-start: 1;
+.hidden {
+    display: none;
 }
 
 @media only screen and (max-width: 666px) {
@@ -175,15 +245,13 @@ p {
         display: block;
     }
     /*///////////////////////////CORE AREAS////////////////////////*/
-    #core-areas {
+    #navigation {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-
     }
-    #core-areas button:first-child {
+    #navigation button:first-child {
         grid-column-start: 1;
-        background-color: bisque;
     }
     button {
         width: 30vw;
@@ -194,22 +262,23 @@ p {
     #placeholder-cores {
         display: block;
     }
-    #placeholder-cores p{
+    #placeholder-cores p {
         font-size: 1em;
     }
-    #placeholder-cores h2{
+    #placeholder-cores h2 {
         font-size: 1.2em;
     }
-    #semesters{
+    /*///////////////////////////Semesters////////////////////////*/
+    #semesters {
         display: block;
     }
-    #semesters p{
+    #semesters p {
         font-size: 1em;
     }
-    #semesters h2{
+    #semesters h2 {
         font-size: 1.2em;
     }
-    h1{
+    h1 {
         font-size: 1.4em;
     }
 }
