@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,18 +19,20 @@
     <p class="slogan">This program is built on four core areas: Interaction development, design and visualisation, communication and presentation and business. You learn to work with frontend development, User Interface Design (UI), User Experience Design (UX) and you understanding the business context.</p>
     <h1>Semester Structure</h1>
     <div id="navigation"></div>
+
     <main></main>
     <template>
+    <section id="semesters" class="hidden">
+        <h2 class="name">Semester name</h2>
 
-    <section id="semesters">
-        <h2>1st Semester</h2>
-        <article id="ects">
-            <h2> ECTS</h2>
-            <p> Distribution of ECTS</p>
+        <article id="ects-container" >
+            <h2 class="ects-name"> </h2>
+            <p class="ects"> </p>
         </article>
-        <article id="exams">
-            <h2>Exams</h2>
-            <p>Information about Exams</p>
+        <article id="exams-container" >
+            <h2 class="exams-name">Exams</h2>
+            <p class="exams"></p>
+
         </article>
     </section>
     </template>
@@ -37,6 +40,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="script-semesters.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,38 @@
+[
+    {
+        "semester": "semesterone",
+        "content": [
+                   "Business 5ECTS,Communication", "Presentation 5ECTS, Design and Visualisation 10ECTS", " Interaction Development 10ECTS."
+                 ],
+        "objective": [
+                 "Understanding of theory", "methods", "tools acquired in the compulsory elements in multimedia production1"
+               ]
+    },
+    {
+        "semester": "semestertwo",
+        "content": [
+                "Business 5ECTS", "Communication and Presentation 5ECTS", "Design and Visualisation 10ECTS", "Interaction Development 10ECTS."
+                              ],
+        "objective": [
+                 "Understanding of theory", "Methods and tools acquired in the compulsory elements in multimedia production2"
+                            ]
+},
+    {
+        "semester": "semesterthree",
+        "content": [
+               "Business 5ECTS", "Communication and Presentation 5ECTS", "Design and Visualisation 5ECTS, Interaction Development 5ECTS."
+                              ],
+        "objective": [
+                "Understanding of theory", "Methods and tools acquired in the compulsory elements in multimedia production advanced"
+                              ]
+        },
+    {
+        "semester": "semesterfour",
+        "content": [
+              "Internship 15ECTS", "Final exam 15ECTS."
+                                                           ],
+        "objective": [
+              "To document students acquisition of the qualifications needed to combine theoretical", "Methodology", "Practical elements in all four core areas of multimedia studies"
+                                                          ]
+      }
+    ]
