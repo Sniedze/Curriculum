@@ -26,7 +26,7 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
+    list-style: none;
     color: black;
     margin-left: 25px;
     display: block;
@@ -73,6 +73,7 @@ nav a:hover {
 
 #links-to-pages a:hover {
     background-color: #AB8FB2;
+
 }
 
 #body-home h1 {
@@ -141,6 +142,84 @@ button {
 
 #competences-container {
     grid-column: 10/14;
+=======
+}
+
+#body-home h1 {
+    margin-top: 65px;
+    margin-bottom: 45px;
+}
+
+
+/*///////////////////////////CORE AREAS////////////////////////*/
+
+#body-cores {
+    background-color: #6FA9B2;
+}
+
+#navigation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.5em;
+}
+
+#navigation button:first-child {
+    grid-column-start: 2;
+}
+
+#navigation button {
+    border: solid thick #F6F6F6;
+    color: black;
+    height: 15vh;
+    border-radius: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    background-color: #6FA9B2;
+    text-decoration: none;
+    text-align: center;
+}
+
+#placeholder-cores {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(20px, 1fr);
+    margin-top: 20px;
+}
+
+#placeholder-cores p {
+    padding: 0 25px;
+}
+
+#content-container {
+    grid-column: 2/14;
+    background-color: #AB8FB2;
+}
+
+#knowledge-container {
+    grid-column: 2/6;
+
+    grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+}
+
+
+.clicked {
+    background-color: #F6F6F6;
+}
+
+=======
+#skills-container {
+    grid-column: 6/10;
+    grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+}
+
+#competences-container {
+    grid-column: 10/14;
     grid-row-start: 2;
     border: solid #6FA9B2;
     border-radius: 10px;
@@ -150,6 +229,7 @@ button {
 .clicked {
     background-color: #F6F6F6;
 }
+
 
 .content-knowledge ul li {
     list-style: none;
