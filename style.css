@@ -249,12 +249,12 @@ ul li {
     background-color: #CCC79A;
 }
 
-#ects {
+#ects-container {
     grid-column: 2/3;
     grid-row-start: 2;
 }
 
-#exams {
+#exams-container {
     grid-column: 3/4;
     grid-row-start: 2;
 }
