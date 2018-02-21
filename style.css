@@ -202,10 +202,6 @@ button {
     background-color: #F6F6F6;
 }
 
-.clicked {
-    background-color: #F6F6F6;
-}
-
 #skills-container {
     grid-column: 6/10;
     grid-row-start: 2;
@@ -219,10 +215,6 @@ button {
     grid-row-start: 2;
     border: solid #6FA9B2;
     border-radius: 10px;
-    background-color: #F6F6F6;
-}
-
-.clicked {
     background-color: #F6F6F6;
 }
 
@@ -254,12 +246,12 @@ ul li {
     background-color: #CCC79A;
 }
 
-#ects {
+#ects-container {
     grid-column: 2/3;
     grid-row-start: 2;
 }
 
-#exams {
+#exams-container {
     grid-column: 3/4;
     grid-row-start: 2;
 }

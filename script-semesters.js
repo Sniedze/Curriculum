@@ -48,7 +48,6 @@ function filter(semester) {
 
 function show(data) {
     data.forEach(element => {
-
         const section = document.querySelector("#" + element.semester);
         let clone = template.cloneNode(true).content;
         if (element.semester == "semesterone") {
