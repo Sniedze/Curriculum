@@ -23,16 +23,20 @@ function createContainers(areas) {
         }
         main.appendChild(section);
         button.href = "#";
+        filter(areas[0]);
         button.addEventListener("click", () => filter(area));
         nav.appendChild(button);
+
     });
+
     fetch("jason.json").then(result => result.json()).then(data => show(data));
+
+
 }
 
 
 function filter(area) {
     document.querySelectorAll("main section").forEach(section => {
-
 
         if (section.id == area.coreArea) {
             section.classList.remove('hidden');
