@@ -73,7 +73,6 @@ nav a:hover {
 
 #links-to-pages a:hover {
     background-color: #AB8FB2;
-
 }
 
 #body-home h1 {
@@ -142,7 +141,6 @@ button {
 
 #competences-container {
     grid-column: 10/14;
-=======
 }
 
 #body-home h1 {
@@ -170,6 +168,7 @@ button {
 #navigation button {
     border: solid thick #F6F6F6;
     color: black;
+    width: 22vw;
     height: 15vh;
     border-radius: 10px;
     font-size: 2em;
@@ -197,19 +196,16 @@ button {
 
 #knowledge-container {
     grid-column: 2/6;
-
     grid-row-start: 2;
     border: solid #6FA9B2;
     border-radius: 10px;
     background-color: #F6F6F6;
 }
 
-
 .clicked {
     background-color: #F6F6F6;
 }
 
-=======
 #skills-container {
     grid-column: 6/10;
     grid-row-start: 2;
@@ -230,10 +226,8 @@ button {
     background-color: #F6F6F6;
 }
 
-
-.content-knowledge ul li {
+ul li {
     list-style: none;
-    text-align: center;
     padding-right: 40px;
     padding-bottom: 25px;
 }

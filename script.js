@@ -8,11 +8,12 @@ function createContainers(areas) {
     areas.forEach(area => {
         let section = document.createElement("section");
 
-        const button = document.createElement("a");
+        const button = document.createElement("button");
 
         section.id = area.coreArea;
         button.textContent = area.coreArea;
-        main.appendChild(section);
+        if (button.textContent == )
+            main.appendChild(section);
         button.href = "#";
         button.addEventListener("click", () => filter(area));
         nav.appendChild(button);
@@ -53,31 +54,31 @@ function show(data) {
 
         let ul = document.createElement('ul');
         clone.querySelector(".content-knowledge").appendChild(ul);
-        clone.querySelector(".content-skills").appendChild(ul);
-        clone.querySelector(".content-competences").appendChild(ul);
 
         element.knowledge.forEach(function (name) {
             let li = document.createElement('li');
             ul.appendChild(li);
             li.innerHTML += name;
         });
-        element.skills.forEach(function (name) {
-            let li = document.createElement('li');
-            ul.appendChild(li);
-            li.innerHTML += name;
-        });
-        element.competences.forEach(function (name) {
-            let li = document.createElement('li');
+        let ulist = document.createElement('ul');
+        clone.querySelector(".content-skills").appendChild(ulist);
 
-            ul.appendChild(li);
-            li.innerHTML += name;
+        element.skills.forEach(function (name) {
+            let list = document.createElement('li');
+            ulist.appendChild(list);
+            list.innerHTML += name;
+        });
+        let ulis = document.createElement('ul');
+        clone.querySelector(".content-competences").appendChild(ulis);
+
+        element.competences.forEach(function (name) {
+            let lis = document.createElement('li');
+            ulis.appendChild(lis);
+            lis.innerHTML += name;
         });
 
         section.appendChild(clone);
 
     })
-
-=======
-
 
 }
