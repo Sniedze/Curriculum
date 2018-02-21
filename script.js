@@ -70,11 +70,9 @@ function show(data) {
 
         clone.querySelector(".content").textContent = element.content;
         clone.querySelector(".knowledge").textContent = "Knowledge";
-
         clone.querySelector(".skills").textContent = "Skills";
-        clone.querySelector(".content-skills").textContent = element.skills;
         clone.querySelector(".competences").textContent = "Competences";
-        clone.querySelector(".content-competences").textContent = element.competences;
+
 
 
         let ul = document.createElement('ul');
