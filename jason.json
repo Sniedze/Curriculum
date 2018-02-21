@@ -25,7 +25,7 @@
     },
 
     {
-    "coreArea":   "Communication & Presentation",
+    "coreArea":   "Communication",
     "content":    [
                    "This core area is  designed to enable the students to understand digital media and create innovative digital user experiences. The students are capable of producing digital content and user- oriented communication."
                   ],
@@ -48,7 +48,7 @@
     },
 
     {
-    "coreArea":   "Design & Visualisation",
+    "coreArea":   "DesignandVisualisation",
     "content":    [
                    "Design and Visualisation intends to enable the students to design and develop advanced digital user interfaces based on user-oriented design principles and incorporating international development trends within digital design."
                   ],
@@ -76,7 +76,7 @@
     },
 
     {
-    "coreArea":   "Interaction Development",
+    "coreArea":   "InteractionDevelopment",
     "content":    [
                   "This core area will  equip students to  model, structure and develop complex digital user interfaces and to handle large data sets for presentation in digital user interfaces."
                   ],
