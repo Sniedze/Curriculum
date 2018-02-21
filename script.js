@@ -1,15 +1,14 @@
 const main = document.querySelector("main");
-const template = document.querySelector("template").content;
+const template = document.querySelector("#temp");
 const nav = document.querySelector("#navigation");
 
 fetch("jason.json").then(result => result.json()).then(data => createContainers(data));
 
 function createContainers(areas) {
     areas.forEach(area => {
-        const section = document.createElement("section");
-
-        const button = document.createElement("button");
-        section.id = area;
+        let section = document.createElement("section");
+        const button = document.createElement("a");
+        section.id = area.coreArea;
         button.textContent = area.coreArea;
         main.appendChild(section);
         button.href = "#";
@@ -23,24 +22,24 @@ function createContainers(areas) {
 function filter(area) {
     document.querySelectorAll("main section").forEach(section => {
 
-        if (section.id == area) {
 
-            document.querySelector("button").classList.add("clicked");
-            section.classList.remove("hidden");
+
+        if (section.id == area.coreArea) {
+            section.classList.remove('hidden');
+
         } else {
-            console.log("work");
-            section.classList.add("hidden");
+            section.classList.add('hidden');
 
         }
     })
 }
 
 function show(data) {
-
     data.forEach(element => {
         console.log("It works");
         const section = document.querySelector("#" + element.coreArea);
         const clone = template.cloneNode(true);
+
         clone.querySelector(".name").textContent = element.coreArea;
         clone.querySelector(".content").textContent = element.content;
         clone.querySelector(".knowledge").textContent = "Knowledge";
