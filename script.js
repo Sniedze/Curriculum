@@ -12,8 +12,16 @@ function createContainers(areas) {
 
         section.id = area.coreArea;
         button.textContent = area.coreArea;
-        if (button.textContent == )
-            main.appendChild(section);
+        if (button.textContent == "Communication") {
+            button.textContent = "Communication & Presentation";
+        }
+        if (button.textContent == "Design") {
+            button.textContent = "Design & Visualisation";
+        }
+        if (button.textContent == "Interaction") {
+            button.textContent = "Interaction Development";
+        }
+        main.appendChild(section);
         button.href = "#";
         button.addEventListener("click", () => filter(area));
         nav.appendChild(button);
