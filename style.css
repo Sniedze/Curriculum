@@ -96,6 +96,7 @@ nav a {
 button {
     border: solid thick #F6F6F6;
     color: black;
+    width: 20.9vw;
     height: 15vh;
     border-radius: 10px;
     font-size: 2em;
@@ -146,6 +147,10 @@ button {
 
 #competences-container {
     grid-column: 10/14;
+    grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 10px;
+    background-color: #F6F6F6;
 }
 
 #body-home h1 {
@@ -157,76 +162,6 @@ button {
     text-align: center;
 }
 
-
-/*///////////////////////////CORE AREAS////////////////////////*/
-
-#body-cores {
-    background-color: #6FA9B2;
-}
-
-#navigation {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 0.5em;
-}
-
-#navigation button:first-child {
-    grid-column-start: 2;
-}
-
-#navigation button {
-    border: solid thick #F6F6F6;
-    color: black;
-    width: 20.9vw;
-    height: 15vh;
-    border-radius: 10px;
-    font-size: 2em;
-    cursor: pointer;
-    background-color: #6FA9B2;
-    text-decoration: none;
-    text-align: center;
-}
-
-#placeholder-cores {
-    display: grid;
-    grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(20px, 1fr);
-    margin-top: 20px;
-}
-
-#placeholder-cores p {
-    padding: 0 25px;
-}
-
-#content-container {
-    grid-column: 2/14;
-    background-color: #AB8FB2;
-}
-
-#knowledge-container {
-    grid-column: 2/6;
-    grid-row-start: 2;
-    border: solid #6FA9B2;
-    border-radius: 10px;
-    background-color: #F6F6F6;
-}
-
-#skills-container {
-    grid-column: 6/10;
-    grid-row-start: 2;
-    border: solid #6FA9B2;
-    border-radius: 10px;
-    background-color: #F6F6F6;
-}
-
-#competences-container {
-    grid-column: 10/14;
-    grid-row-start: 2;
-    border: solid #6FA9B2;
-    border-radius: 10px;
-    background-color: #F6F6F6;
-}
-
 ul li {
     list-style: none;
     padding-right: 40px;
@@ -236,21 +171,6 @@ ul li {
 
 /*///////////////////////////Semesters////////////////////////*/
 
-#body-semesters {
-    background-color: #CCC79A;
-}
-
-#semesters {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 10px, 1fr;
-    grid-gap: 0.5em;
-    border: solid thin black;
-    color: black;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
 #body-semesters button {
     background-color: #CCC79A;
 }
@@ -258,11 +178,17 @@ ul li {
 #ects-container {
     grid-column: 2/3;
     grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 10px;
+    background-color: #F6F6F6;
 }
 
 #exams-container {
     grid-column: 3/4;
     grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 10px;
+    background-color: #F6F6F6;
 }
 
 #semesters h2:first-child {
