@@ -96,7 +96,7 @@ header {
 }
 
 .arrow-down:hover,
-.arrow-down2:hover {
+.arrow-down2:hover, {
     border-top: 60px solid #AB8FB2;
 }
 
@@ -205,24 +205,62 @@ ul li {
 }
 
 
-/*///////////////////////////////////////////TRIANGLES IN Core Areas///////////////////*/
-
+/*///////////////////////////////////////////NAVIGATION TRIANGLES///////////////////*/
+.homeText, .semestersText, .coresText{
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+    font-family: 'Arima Madurai';
+    height:0;
+    text-decoration: none;
+     font-size: 0.8em;
+}
 .arrow-up {
     width: 0;
     height: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 60px solid #F6F6F6;
-    display: inline-block;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #F6F6F6;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
 }
+.homeArrow:hover, .semestersArrow:hover, .coresArrow:hover{
+    opacity: 0.5;
+}
+.semestersText, .coresText{
+    top: 50%;
+    left: 59.6%;
+    font-family: 'Arima Madurai';
+    color: black;
+    height: auto;
 
+}
 .arrow-right {
     width: 0;
     height: 0;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    border-left: 60px solid #CCC79A;
-    display: inline-block;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 80px solid #F6F6F6;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 80px solid #F6F6F6;
+    position: absolute;
+    top: 50%;
+    left: 59.4%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -286,7 +324,6 @@ ul li {
 .area-name ul {
     padding-left: vw;
 }
-
 
 /*///////////////////////////////////   SLOGAN IN ALL PAGES///////////////////////////*/
 
