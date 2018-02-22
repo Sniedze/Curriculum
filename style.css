@@ -59,9 +59,9 @@ header {
     font-size: 0.8em;
 }
 
-.indexBoxes:hover {
+/*.indexBoxes:hover {
     background-color: #AB8FB2;
-}
+}*/
 
 #body-home h1 {
     margin-top: 35px;
@@ -95,10 +95,12 @@ header {
     border-top: 60px solid #CCC79A;
 }
 
+/*
 .arrow-down:hover,
 .arrow-down2:hover {
     border-top: 60px solid #AB8FB2;
 }
+*/
 
 
 /*///////////////////////////CORE AREAS////////////////////////*/
