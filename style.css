@@ -34,7 +34,6 @@ header {
     margin-bottom: 10px;
     font-size: 4em;
     text-align: center;
-    vertical-align: middle;
 }
 
 .indexBoxes:first-child {
@@ -44,10 +43,6 @@ header {
 
 .indexBoxes:nth-child(3) {
     grid-column-start: 3;
-    background-color: #CCC79A;
-}
-
-.checked {
     background-color: #CCC79A;
 }
 
