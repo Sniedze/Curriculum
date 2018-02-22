@@ -2,37 +2,50 @@
     {
         "semester": "semesterone",
         "content": [
-                   "Business 5ECTS,Communication", "Presentation 5ECTS, Design and Visualisation 10ECTS", " Interaction Development 10ECTS."
+                   "Business", "Communication and Presentation", "Design and Visualisation", "Interaction Development"
                  ],
-        "objective": [
-                 "Understanding of theory", "methods", "tools acquired in the compulsory elements in multimedia production1"
-               ]
+        "ects": [
+                   "5 ECTS", "5 ECTS", "10 ECTS", "10 ECTS"
+                 ],
+        "objective": ["Students must present one or more product examples submitted in the first semester. During the first semester the students work on a digital portfolio with product examples from the classes. The portfolio forms the basis of the first-semester exam.", "Individual oral exam based on one or more product examples submitted in the first semester. The exam is held after the first semester."
+        ]
+
     },
     {
         "semester": "semestertwo",
         "content": [
-                "Business 5ECTS", "Communication and Presentation 5ECTS", "Design and Visualisation 10ECTS", "Interaction Development 10ECTS."
-                              ],
+                   "Business", "Communication and Presentation", "Design and Visualisation", "Interaction Development"
+                 ],
+        "ects": [
+                   "5 ECTS", "5 ECTS", "10 ECTS", "10 ECTS"
+                 ],
         "objective": [
-                 "Understanding of theory", "Methods and tools acquired in the compulsory elements in multimedia production2"
+                 "The exam is to demonstrate that the student is able to communicate visually to a target group, develop an interactive digital product, taking into account the stakeholders, and carry out a project in a team.", "Oral individual or group exam based on project work carried out in groups. The exam is held after the second semester."
                             ]
 },
     {
         "semester": "semesterthree",
         "content": [
-               "Business 5ECTS", "Communication and Presentation 5ECTS", "Design and Visualisation 5ECTS, Interaction Development 5ECTS."
-                              ],
+                   "Business", "Communication and Presentation", "Design and Visualisation", "Interaction Development"
+                 ],
+        "ects": [
+                   "5 ECTS", "5 ECTS", "5 ECTS", "5 ECTS"
+                 ],
+
         "objective": [
-                "Understanding of theory", "Methods and tools acquired in the compulsory elements in multimedia production advanced"
+                "The objective is to test the students’ understanding of the theory, method and tools acquired through the compulsory programme element: Multimedia Production Advanced, and the students’ ability to develop a professional profile in relation to the current requirements in the area.", "Individual oral exam based on one or more product examples submitted in the third semester. The exam is held in the course of or after the third semester."
                               ]
         },
     {
         "semester": "semesterfour",
         "content": [
-              "Internship 15ECTS", "Final exam 15ECTS."
+              "Internship", "Final Exam"
                                                            ],
+        "ects": [
+                   "15 ECTS", "15 ECTS"
+                 ],
         "objective": [
-              "To document students acquisition of the qualifications needed to combine theoretical", "Methodology", "Practical elements in all four core areas of multimedia studies"
+              "The internship is concluded with an internship report, a presentation and a discussion of one or more products developed by the student during the internship, as well as of the professional experience gained by the student. ", "Students are awarded one grade for their overall performance, covering their report, presentation and a discussion. The assessment is based on the extent to which the students have understood the internship goals and learning objectives."
                                                           ]
       }
     ]

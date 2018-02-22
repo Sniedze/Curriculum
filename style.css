@@ -5,31 +5,16 @@ html {
 
 header {
     background-color: #FFD3E8;
-    height: 105px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.5em;
+    height: 130px;
+    position: relative;
 }
 
 .logos {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-}
-
-nav {
-    margin-left: 45px;
-    margin-top: 35px;
-    font-size: 2em;
-    display: inline-block;
-}
-
-nav a {
-    list-style: none;
-    color: black;
-    margin-left: 25px;
-    display: block;
+    position: absolute;
+    width: 175px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -39,41 +24,80 @@ nav a {
     background-color: #F6F6F6;
 }
 
-#links-to-pages a {
-    width: 22vw;
+.indexBoxes {
+    width: 21vw;
     text-decoration: none;
-    border: solid thin black;
     color: black;
     padding: 10vh;
     margin: 65px;
-    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-size: 4em;
     text-align: center;
+    vertical-align: middle;
 }
 
-#links-to-pages a:first-child {
+.indexBoxes:first-child {
     grid-column-start: 2;
     background-color: #6FA9B2;
 }
 
-#links-to-pages a:nth-child(2) {
+.indexBoxes:nth-child(3) {
     grid-column-start: 3;
+    background-color: #CCC79A;
+}
+
+.checked {
     background-color: #CCC79A;
 }
 
 #links-to-pages {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-top: 100px;
+    font-family: 'Arima Madurai';
+    font-weight: lighter;
+    font-size: 0.8em;
 }
 
-#links-to-pages a:hover {
+.indexBoxes:hover {
     background-color: #AB8FB2;
 }
 
 #body-home h1 {
-    margin-top: 65px;
+    margin-top: 35px;
     margin-bottom: 45px;
+    font-family: 'Arima Madurai';
+    font-weight: lighter;
+}
+
+
+/*///////////////////////////////////////////TRIANGLES IN INDEX///////////////////*/
+
+.arrow-down {
+    grid-column-start: 2;
+    grid-row: 2;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #6FA9B2;
+}
+
+.arrow-down2 {
+    grid-column-start: 3;
+    grid-row: 2;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #CCC79A;
+}
+
+.arrow-down:hover,
+.arrow-down2:hover {
+    border-top: 60px solid #AB8FB2;
 }
 
 
@@ -94,14 +118,14 @@ nav a {
 }
 
 button {
-    border: solid thick #F6F6F6;
+    border: solid #F6F6F6;
     color: black;
-    width: 20.9vw;
-    height: 15vh;
-    border-radius: 10px;
-    font-size: 2em;
+    width: 16vw;
+    height: 10vh;
+    font-size: 1.8em;
     cursor: pointer;
     background-color: #6FA9B2;
+    font-family: 'Arima Madurai';
 }
 
 #navigation button:focus {
@@ -116,12 +140,13 @@ button {
 #placeholder-cores {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(20px, 1fr);
+    grid-template-rows: 138px minmax(44vh, 1fr);
     margin-top: 20px;
 }
 
-#placeholder-cores p {
+#placeholder-cores article p {
     padding: 0 25px;
+    font-family: 'Work Sans', sans-serif;
 }
 
 #content-container {
@@ -129,11 +154,15 @@ button {
     background-color: #AB8FB2;
 }
 
+#content-container h2 {
+    margin: 20px 0 10px 0;
+}
+
 #knowledge-container {
     grid-column: 2/6;
     grid-row-start: 2;
     border: solid #6FA9B2;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #F6F6F6;
 }
 
@@ -141,7 +170,7 @@ button {
     grid-column: 6/10;
     grid-row-start: 2;
     border: solid #6FA9B2;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #F6F6F6;
 }
 
@@ -149,7 +178,7 @@ button {
     grid-column: 10/14;
     grid-row-start: 2;
     border: solid #6FA9B2;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #F6F6F6;
 }
 
@@ -158,8 +187,10 @@ button {
     margin-bottom: 45px;
 }
 
-.content {
+#content-container p:nth-child(2) {
     text-align: center;
+    font-family: 'Arima Madurai';
+    margin: 0;
 }
 
 ul li {
@@ -169,52 +200,112 @@ ul li {
 }
 
 
+/*///////////////////////////////////////////TRIANGLES IN Core Areas///////////////////*/
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid #F6F6F6;
+    display: inline-block;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid #CCC79A;
+    display: inline-block;
+}
+
+
 /*///////////////////////////Semesters////////////////////////*/
+
+#body-semesters {
+    background-color: #CCC79A;
+}
+
+#semesters {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 100px minmax(51vh, 1fr);
+    color: black;
+    margin-top: 20px;
+}
+
+#semesters p {
+    padding: 0 25px;
+    font-family: 'Work Sans', sans-serif;
+}
 
 #body-semesters button {
     background-color: #CCC79A;
 }
 
 #ects-container {
-    grid-column: 2/3;
+    grid-column: 2/8;
     grid-row-start: 2;
-    border: solid #6FA9B2;
-    border-radius: 10px;
+    border: solid #CCC79A;
+    border-radius: 20px;
     background-color: #F6F6F6;
 }
 
 #exams-container {
-    grid-column: 3/4;
+    grid-column: 8/14;
     grid-row-start: 2;
-    border: solid #6FA9B2;
-    border-radius: 10px;
+    border: solid #CCC79A;
+    border-radius: 20px;
     background-color: #F6F6F6;
 }
 
-#semesters h2:first-child {
-    grid-column: 2/4;
+#semester-container {
+    grid-column: 2/14;
     grid-row-start: 1;
+    background-color: #AB8FB2;
+}
+
+#ects-structure {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.ects,
+.area-name,
+.ects ul,
+.area-name ul {
+    margin-top: 0;
+}
+
+.area-name ul {
+    padding-left: vw;
 }
 
 
 /*///////////////////////////////////   SLOGAN IN ALL PAGES///////////////////////////*/
 
 .slogan {
-    width: 60vw;
+    width: 70vw;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.5em;
+    font-family: 'Arima Madurai';
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 h1 {
     font-size: 3em;
     text-align: center;
-    margin-bottom: 5px;
+    margin: 5px 0;
+    font-family: 'Arima Madurai';
 }
 
 h2 {
     text-align: center;
     font-size: 2em;
+    font-family: 'Arima Madurai';
 }
 
 p {
@@ -250,12 +341,13 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        margin: 0 10vw;
     }
     #navigation button:first-child {
         grid-column-start: 1;
     }
     button {
-        width: 30vw;
+        width: 32vw;
         height: 85px;
         margin: auto;
         font-size: 1em;
@@ -281,5 +373,9 @@ p {
     }
     h1 {
         font-size: 1.4em;
+    }
+    .ects ul,
+    .area-name ul {
+        padding-left: 25;
     }
 }
