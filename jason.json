@@ -1,8 +1,125 @@
-    [{
+[
+    {
         "coreArea": "Business",
-        "content": "The core area is intended to provide the students with the necessary qualifications to understand the commercial framework of the business and digital business models, apply digital user data and take an innovative approach to multimedia production. Students must understand the multimedia designer’s role in the value chain in a multimedia production and be able to plan, manage and carry out a multimedia production. ",
-        "knowledge": "development methods for multimedia production. Copyright and licensing methods in multimedia production",
-        "skils": "apply key tools and digital data to optimise multimedia production ",
-        "competences": "participate in teams as well as manage and adjust planning, control and quality assurance in the production of complex digital user interfaces ",
-        "ect": 15
-}]
+        "content": "Commercial framework of the business and digital business models. Application of digital user data  and innovative approach to design.",
+        "knowledge": [
+
+
+                   " Methods for multimedia production.",
+                   "  Copyright and licensing methods in multimedia production.",
+                   " Company strategy on multimedia production and designer’ s position in the value chain.",
+                   "Company’s external environment, including its stakeholders, and the company’s resource base.",
+                   " Tools and methods of project management and data to optimization plus  budgeting."],
+
+        "skills": [
+
+                   " Key tools and digital data to optimise multimedia production.",
+                   "Planning and evaluation of projects, management and quality assurance in teams.",
+                   "Assessing  data and solutions  for innovative productions."
+                  ],
+
+        "competences": [
+
+                   " Team management, planning, control and quality assurance in the production of complex digital user interfaces",
+                   " Work independently on the same",
+                   " Keep updated on advanced digital multimedia production."
+                  ],
+
+        "ects": 15
+    },
+
+    {
+        "coreArea": "Communication",
+        "content": "Understanding digital media and create innovative digital user experiences, producing digital content and user- oriented communication.",
+
+        "knowledge": [
+
+                   " Content production theory and methods",
+                   "Learn information architecture for digital media is",
+                   "Various test methods ,digital trends, plan user interaction in digital productions."
+                  ],
+
+        "skills": [
+
+                   " Collecting and applying  data  from users and situations, planning and producing user - oriented content in teams.",
+                   "Applying key theory, method and tools to support digital user experiences,plus test methods. ",
+                   " Assessing, adjusting and presenting solutions for innovative communication in advanced digital media productions",
+                   " Communicating and supporting the  user experiences to stakeholders."
+                  ],
+
+        "competences": [
+                   "  Team  production of digital, user-oriented content and create user experiences in complex digital user interfaces",
+                   " Independently keep abreast on new knowledge about the users’ application of technologies and media in an international digital mediascape "
+                  ],
+        "ects": 15
+    },
+
+    {
+        "coreArea": "Design",
+        "content": " Designing and developing advanced digital user interfaces incorporating international development trends within digital design.",
+
+        "knowledge": [
+
+                   " Composition and layout of digital design in multimedia production",
+                   " Design processes and documentation of digital design in multimedia production and media types",
+                   "Current digital exchange formats used in multimedia production",
+                   " Relevant theories, tools and methods of the design and development of user oriented design and user experiences",
+                   " Methods of presenting data", "current international development trends in digital design."
+                  ],
+
+        "skills": [
+
+                   " Applying key design processes for multimedia production, including documentation of the design process",
+                   " Key methods and design processes, and present solutions for the production and communication of digital user interfaces",
+                   " Assessing and posting  graphic material to ensure consistency of design and apply user friendly approach",
+                   "Assessing and selecting multimedia designs and components for  the development and production of advanced digital user experiences",
+                   " Assessing and applying key international development trends to design."
+                  ],
+
+        "competences": [
+
+                   " Handling different types of material for the production of digital user interfaces",
+                   " Handling process documentation and communication in relation to stakeholders",
+                   " Team and management of the design and development of digital user interfaces",
+                   "Independently keep up to date and acquire new knowledge within international design trends, innovative technologies and advanced digital user interfaces."
+                  ],
+
+        "Ects": 15
+    },
+
+    {
+        "coreArea": "Interaction",
+        "content": "Equiping students to  model, structure and develop complex digital user interfaces and to handle large data sets.",
+
+        "knowledge": [
+                   " Understanding the structure and use of the Internet",
+                   " Understanding client-server relationships and their impact on digital user interfaces",
+                   " Technologies for developing digital user interfaces",
+                   "Key methods for modelling, structuring and developing digital user interfaces.",
+                   " Key and current programming paradigms for developing digital user interfaces data formats and exchange of limited data sets",
+                   " Synchronously and asynchronously with the server",
+                   " Current libraries and frameworks for developing advanced digital user interfaces",
+                   " Data structures, data formats and exchange of complex data sets with server."
+
+                  ],
+
+        "skills": [
+
+                   " Key technologies and development environments as well as version control methods in developing digital user interfaces",
+                   "Key programming principles, including control structures, functions and variables for the development.",
+                   " Key technologies for handling and displaying content in the production of digital user interfaces",
+                   " Assessing, defining,and applying current libraries and frameworks for innovative development",
+                   " Communicating the development process to stakeholders"
+                  ],
+
+        "competences": [
+
+                   " Handling key technologies and methods for version control of multimedia productions",
+                   "Teams development of digital user interfaces",
+                   "Handling process documentation and communication in relation to stakeholders, data exchange."
+                  ],
+
+        "ects": 15
+
+    }
+]

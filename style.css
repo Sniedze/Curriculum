@@ -1,33 +1,477 @@
-#logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
+body,
+html {
+    margin: auto;
 }
 
-a {
-    display: inline-block;
+header {
+    background-color: #FFD3E8;
+    height: 130px;
+    position: relative;
+}
+
+.logos {
+    position: absolute;
+    width: 175px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ////////////////////////////////////////INDEX PAGE STUFF/////////////////*/
+
+#body-home {
+    background-color: #F6F6F6;
+}
+
+.indexBoxes {
+    width: 21vw;
     text-decoration: none;
-    border: solid thin black;
     color: black;
-    width: 22vw;
     padding: 10vh;
     margin: 65px;
-    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-size: 4em;
-    text-align: center
+    text-align: center;
 }
 
-nav {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 79%;
+.indexBoxes:first-child {
+    grid-column-start: 2;
+    background-color: #6FA9B2;
 }
+
+.indexBoxes:nth-child(3) {
+    grid-column-start: 3;
+    background-color: #CCC79A;
+}
+
+#links-to-pages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: 'Arima Madurai';
+    font-weight: lighter;
+    font-size: 0.8em;
+}
+
+#body-home h1 {
+    margin-top: 35px;
+    margin-bottom: 45px;
+    font-family: 'Arima Madurai';
+}
+
+
+/*///////////////////////////////////////////TRIANGLES IN INDEX///////////////////*/
+
+.arrow-down {
+    grid-column-start: 2;
+    grid-row: 2;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #6FA9B2;
+}
+
+.arrow-down2 {
+    grid-column-start: 3;
+    grid-row: 2;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid #CCC79A;
+}
+
+
+
+/*///////////////////////////CORE AREAS////////////////////////*/
+
+#body-cores {
+    background-color: #6FA9B2;
+}
+
+#navigation {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0.5em;
+}
+
+#navigation button:first-child {
+    grid-column-start: 2;
+}
+
+button {
+    border: solid #F6F6F6;
+    width: 16vw;
+    height: 10vh;
+    font-size: 1.8em;
+    cursor: pointer;
+    background-color: #6FA9B2;
+    font-family: 'Arima Madurai';
+}
+
+#navigation button:focus {
+    background-color: #F6F6F6;
+    outline: none;
+}
+
+#navigation button:hover {
+    background-color: #F6F6F6;
+    opacity: 0.5;
+}
+
+#placeholder-cores {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 141px minmax(48vh, 1fr);
+    margin-top: 20px;
+}
+
+.info {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+#placeholder-cores article h2 {
+    margin: 15px;
+}
+
+#content-container {
+    grid-column: 2/14;
+    background-color: #AB8FB2;
+}
+
+#content-container h2 {
+    margin: 20px 0 10px 0;
+}
+
+#knowledge-container {
+    grid-column: 2/6;
+    grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+}
+
+#skills-container {
+    grid-column: 6/10;
+    grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+}
+
+#competences-container {
+    grid-column: 10/14;
+    grid-row-start: 2;
+    border: solid #6FA9B2;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+}
+
+#body-home h1 {
+    margin-top: 65px;
+    margin-bottom: 45px;
+}
+
+#content-container p:nth-child(2) {
+    text-align: center;
+    font-family: 'Arima Madurai';
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    padding-right: 40px;
+    padding-bottom: 25px;
+}
+
+
+/*///////////////////////////////////////////NAVIGATION TRIANGLES///////////////////*/
+
+.homeText,
+.semestersText,
+.coresText {
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+    font-family: 'Arima Madurai';
+    height: 0;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #F6F6F6;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+.homeArrow:hover,
+.semestersArrow:hover,
+.coresArrow:hover {
+    opacity: 0.5;
+}
+
+.semestersText,
+.coresText {
+    top: 50%;
+    left: 59.6%;
+    font-family: 'Arima Madurai';
+    color: black;
+    height: auto;
+
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 80px solid #F6F6F6;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 80px solid #F6F6F6;
+    position: absolute;
+    top: 50%;
+    left: 59.4%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*///////////////////////////Semesters////////////////////////*/
+
+#body-semesters {
+    background-color: #CCC79A;
+}
+
+#semesters {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 100px minmax(52vh, 1fr);
+    margin-top: 20px;
+}
+
+#semesters p {
+    padding: 0 25px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+#body-semesters button {
+    background-color: #CCC79A;
+}
+
+#ects-container {
+    grid-column: 2/8;
+    grid-row-start: 2;
+    border: solid #CCC79A;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+}
+
+#exams-container {
+    grid-column: 8/14;
+    grid-row-start: 2;
+    border: solid #CCC79A;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+}
+
+#semester-container {
+    grid-column: 2/14;
+    grid-row-start: 1;
+    background-color: #AB8FB2;
+}
+
+#ects-structure {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.ects,
+.area-name,
+.ects ul,
+.area-name ul {
+    margin-top: 0;
+}
+
+.area-name ul {
+    padding-left: 4vw;
+}
+
+/*///////////////////////////////////   SLOGAN IN ALL PAGES///////////////////////////*/
 
 .slogan {
-    width: 50vw;
+    width: 70vw;
     margin-left: auto;
     margin-right: auto;
+    font-size: 1.5em;
+    font-family: 'Arima Madurai';
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 5px 0;
+    font-family: 'Arima Madurai';
+}
+
+h2 {
+    text-align: center;
     font-size: 2em;
+    font-family: 'Arima Madurai';
+}
+
+p {
+    font-size: 1.3em;
+    color: black;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 666px) {
+    /*///////////////////////////////////   SLOGAN IN ALL PAGES///////////////////////////*/
+    .slogan {
+        width: 80vw;
+        font-size: 1em;
+    }
+    /*/////////////////////////////////HEADER CONTENT////////////*/
+    .logos {
+        width: 90px;
+    }
+    header {
+        height: 90px;
+    }
+    .arrow-up {
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 60px solid #F6F6F6;
+        left: 19%;
+    }
+    .homeText {
+        left: 19%;
+        font-size: 0.7em;
+    }
+    .arrow-right {
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 60px solid #F6F6F6;
+        left: 80%;
+    }
+    .semestersText {
+        left: 79%;
+        font-size: 0.7em;
+    }
+    .arrow-left {
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-right: 60px solid #F6F6F6;
+        left: 79%;
+    }
+    .coresText{
+        left: 79.6%;
+        font-size: 0.7em;
+    }
+    /* ////////////////////////////////////////INDEX PAGE STUFF/////////////////*/
+    .indexBoxes {
+        width: 80vw;
+        padding: 50px 0;
+        display: block;
+    }
+    #links-to-pages a {
+        margin: auto;
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+    #links-to-pages {
+        display: block;
+        grid-template-columns: 1fr 25px;
+    }
+    #body-home h1 {
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+    /*///////////////////////////////////////////TRIANGLES IN INDEX///////////////////*/
+    .arrow-down {
+        display: none;
+    }
+    .arrow-down2 {
+        display: none;
+    }
+    /*///////////////////////////CORE AREAS////////////////////////*/
+    #navigation {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    #navigation button:first-child {
+        grid-column-start: 1;
+    }
+    button {
+        width: 40vw;
+        height: 85px;
+        margin: auto;
+        font-size: 1em;
+    }
+    #placeholder-cores {
+        display: block;
+    }
+    .info {
+        font-size: 1em;
+        padding-right: 20px
+    }
+    ul li {
+        list-style: none;
+        padding-right: 4px;
+        padding-bottom: 10px;
+    }
+    #placeholder-cores h2 {
+        font-size: 1.2em;
+    }
+    #content-container {
+        padding: 0 15px;
+    }
+    /*///////////////////////////Semesters////////////////////////*/
+    #semesters {
+        display: block;
+    }
+    #semesters p {
+        font-size: 1em;
+        padding: 0 20px 0 0;
+    }
+    #semesters h2 {
+        font-size: 1.2em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    .ects ul,
+    .area-name ul {
+        padding-left: 25;
+    }
 }
