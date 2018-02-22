@@ -7,39 +7,6 @@ const arrow = document.querySelector(".arrow-down");
 const container2 = document.querySelector("#second-container");
 const arrow2 = document.querySelector(".arrow-down2");
 
-/*Event listener for the first box in the index page*/
-
-container.addEventListener('mouseover', hover);
-arrow.addEventListener('mouseover', hover);
-
-function hover() {
-    arrow.style.borderTop = "60px solid #AB8FB2"
-    container.style.backgroundColor = "#AB8FB2";
-}
-container.addEventListener('mouseout', unhover);
-arrow.addEventListener('mouseout', unhover);
-
-function unhover() {
-    arrow.style.borderTop = "60px solid #6FA9B2";
-    container.style.backgroundColor = "#6FA9B2";
-}
-
-/* Event listener for the second box in the index page */ //
-container2.addEventListener('mouseover', hovered);
-arrow2.addEventListener('mouseover', hovered);
-
-function hovered() {
-    arrow2.style.borderTop = "60px solid #AB8FB2"
-    container2.style.backgroundColor = "#AB8FB2";
-}
-container2.addEventListener('mouseout', unhovered);
-arrow2.addEventListener('mouseout', unhovered);
-
-function unhovered() {
-    arrow2.style.borderTop = "60px solid #CCC79A";
-    container2.style.backgroundColor = "#CCC79A";
-}
-
 
 fetch("jason.json").then(result => result.json()).then(data => createContainers(data));
 
@@ -143,4 +110,36 @@ function show(data) {
 
     })
 
+}
+/*Event listener for the first box in the index page*/
+
+container.addEventListener('mouseover', hover);
+arrow.addEventListener('mouseover', hover);
+
+function hover() {
+    arrow.style.borderTop = "60px solid #AB8FB2"
+    container.style.backgroundColor = "#AB8FB2";
+}
+container.addEventListener('mouseout', unhover);
+arrow.addEventListener('mouseout', unhover);
+
+function unhover() {
+    arrow.style.borderTop = "60px solid #6FA9B2";
+    container.style.backgroundColor = "#6FA9B2";
+}
+
+/*Event listener for the second box in the index page*/
+container2.addEventListener('mouseover', hovered);
+arrow2.addEventListener('mouseover', hovered);
+
+function hovered() {
+    arrow2.style.borderTop = "60px solid #AB8FB2"
+    container2.style.backgroundColor = "#AB8FB2";
+}
+container2.addEventListener('mouseout', unhovered);
+arrow2.addEventListener('mouseout', unhovered);
+
+function unhovered() {
+    arrow2.style.borderTop = "60px solid #CCC79A";
+    container2.style.backgroundColor = "#CCC79A";
 }
