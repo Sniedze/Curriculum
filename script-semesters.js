@@ -4,18 +4,14 @@ const nav = document.querySelector("#navigation");
 
 fetch("jason-semesters.json").then(result => result.json()).then(data => createContainers(data));
 
-
-function createContainers(semesters) {
-    areas.forEach(semester => {
-
+function createContainers(areas) {
+    areas.forEach(area => {
         let section = document.createElement("section");
 
         const button = document.createElement("button");
 
-        section.id = semester.semester;
-        button.textContent = semester.semester;
-
-
+        section.id = area.semester;
+        button.textContent = area.semester;
         if (button.textContent == "semesterone") {
             button.textContent = "1st Semester";
         }
@@ -63,15 +59,18 @@ function show(data) {
     data.forEach(element => {
         const section = document.querySelector("#" + element.semester);
         let clone = template.cloneNode(true).content;
-        /*if (element.coreArea == "Communication") {
-            element.coreArea = "Communication & Presentation";
+        if (element.semester == "semesterone") {
+            element.semester = "1st Semester";
         }
-        if (element.coreArea == "Design") {
-            element.coreArea = "Design & Visualisation";
+        if (element.semester == "semestertwo") {
+            element.semester = "2nd Semester";
         }
-        if (element.coreArea == "Interaction") {
-            element.coreArea = "Interaction Development";
-        }*/
+        if (element.semester == "semesterthree") {
+            element.semester = "3rd Semester";
+        }
+        if (element.semester == "semesterfour") {
+            element.semester = "4th Semester";
+        }
         clone.querySelector(".name").textContent = element.semester;
 
 
