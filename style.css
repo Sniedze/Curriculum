@@ -365,12 +365,12 @@ p {
     }
     #placeholder-cores article p {
         font-size: 1em;
-        padding: 0 15px 0 15px;
+        padding: 0;
     }
     ul li {
         list-style: none;
-        padding-right: 40px;
-        padding-bottom: 25px;
+        padding-right: 4px;
+        padding-bottom: 10px;
     }
     #placeholder-cores h2 {
         font-size: 1.2em;
@@ -381,6 +381,7 @@ p {
     }
     #semesters p {
         font-size: 1em;
+        padding: 0 15px 0 0;
     }
     #semesters h2 {
         font-size: 1.2em;
