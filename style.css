@@ -197,7 +197,10 @@ ul li {
 
 
 /*///////////////////////////////////////////NAVIGATION TRIANGLES///////////////////*/
-.homeText, .semestersText, .coresText{
+
+.homeText,
+.semestersText,
+.coresText {
     position: absolute;
     top: 50%;
     left: 39%;
@@ -205,10 +208,11 @@ ul li {
     z-index: 2;
     color: black;
     font-family: 'Arima Madurai';
-    height:0;
+    height: 0;
     text-decoration: none;
-     font-size: 0.8em;
+    font-size: 0.8em;
 }
+
 .arrow-up {
     width: 0;
     height: 0;
@@ -220,10 +224,15 @@ ul li {
     left: 39%;
     transform: translate(-50%, -50%);
 }
-.homeArrow:hover, .semestersArrow:hover, .coresArrow:hover{
+
+.homeArrow:hover,
+.semestersArrow:hover,
+.coresArrow:hover {
     opacity: 0.5;
 }
-.semestersText, .coresText{
+
+.semestersText,
+.coresText {
     top: 50%;
     left: 59.6%;
     font-family: 'Arima Madurai';
@@ -231,6 +240,7 @@ ul li {
     height: auto;
 
 }
+
 .arrow-right {
     width: 0;
     height: 0;
@@ -242,6 +252,7 @@ ul li {
     left: 60%;
     transform: translate(-50%, -50%);
 }
+
 .arrow-left {
     width: 0;
     height: 0;
@@ -355,6 +366,43 @@ p {
     .slogan {
         width: 80vw;
         font-size: 1em;
+    }
+    /*/////////////////////////////////HEADER CONTENT////////////*/
+    .logos {
+        width: 90px;
+    }
+    header {
+        height: 90px;
+    }
+    .arrow-up {
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 60px solid #F6F6F6;
+        left: 19%;
+    }
+    .homeText {
+        left: 19%;
+        font-size: 0.7em;
+    }
+    .arrow-right {
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 60px solid #F6F6F6;
+        left: 80%;
+    }
+    .semestersText {
+        left: 79%;
+        font-size: 0.7em;
+    }
+    .arrow-left {
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-right: 60px solid #F6F6F6;
+        left: 79%;
+    }
+    .coresText{
+        left: 79%;
+        font-size: 0.7em;
     }
     /* ////////////////////////////////////////INDEX PAGE STUFF/////////////////*/
     .indexBoxes {
