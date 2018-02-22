@@ -135,8 +135,7 @@ button {
     margin-top: 20px;
 }
 
-#placeholder-cores article p {
-    padding: 0 25px 0 25px;
+.info {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
 }
@@ -265,7 +264,6 @@ ul li {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: 100px minmax(52vh, 1fr);
-    color: black;
     margin-top: 20px;
 }
 
@@ -313,7 +311,7 @@ ul li {
 }
 
 .area-name ul {
-    padding-left: vw;
+    padding-left: 4vw;
 }
 
 /*///////////////////////////////////   SLOGAN IN ALL PAGES///////////////////////////*/
@@ -387,13 +385,12 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        margin: 0 10vw;
     }
     #navigation button:first-child {
         grid-column-start: 1;
     }
     button {
-        width: 32vw;
+        width: 40vw;
         height: 85px;
         margin: auto;
         font-size: 1em;
@@ -401,17 +398,20 @@ p {
     #placeholder-cores {
         display: block;
     }
-    #placeholder-cores article p {
+    .info {
         font-size: 1em;
-        padding: 0 15px 0 15px;
+        padding-right: 20px
     }
     ul li {
         list-style: none;
-        padding-right: 40px;
-        padding-bottom: 25px;
+        padding-right: 4px;
+        padding-bottom: 10px;
     }
     #placeholder-cores h2 {
         font-size: 1.2em;
+    }
+    #content-container {
+        padding: 0 15px;
     }
     /*///////////////////////////Semesters////////////////////////*/
     #semesters {
@@ -419,6 +419,7 @@ p {
     }
     #semesters p {
         font-size: 1em;
+        padding: 0 20px 0 0;
     }
     #semesters h2 {
         font-size: 1.2em;
