@@ -119,7 +119,6 @@ header {
 
 button {
     border: solid #F6F6F6;
-    color: black;
     width: 16vw;
     height: 10vh;
     font-size: 1.8em;
@@ -130,6 +129,7 @@ button {
 
 #navigation button:focus {
     background-color: #F6F6F6;
+    outline: none;
 }
 
 #navigation button:hover {
@@ -140,7 +140,7 @@ button {
 #placeholder-cores {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: 138px minmax(48vh, 1fr);
+    grid-template-rows: 141px minmax(48vh, 1fr);
     margin-top: 20px;
 }
 
