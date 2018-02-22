@@ -47,10 +47,6 @@ header {
     background-color: #CCC79A;
 }
 
-.checked {
-    background-color: #CCC79A;
-}
-
 #links-to-pages {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
