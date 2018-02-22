@@ -1,10 +1,7 @@
 [
     {
         "coreArea": "Business",
-        "content": [
-                   "  Commercial framework of the business and digital business models.",
-                   " Application of digital user data  and innovative approach to multimedia production.",
-                   " Multimedia designer’s role in the value chain  production planning, managing  productions."],
+        "content": "Commercial framework of the business and digital business models. Application of digital user data  and innovative approach to multimedia production.",
         "knowledge": [
 
 
@@ -33,9 +30,8 @@
 
     {
         "coreArea": "Communication",
-        "content": [
-                   " Understanding digital media and create innovative digital user experiences, producing digital content and user- oriented communication."
-                  ],
+        "content": "Understanding digital media and create innovative digital user experiences, producing digital content and user- oriented communication.",
+
         "knowledge": [
 
                    " Content production theory and methods",
@@ -60,9 +56,8 @@
 
     {
         "coreArea": "Design",
-        "content": [
-                   " Designing and developing advanced digital user interfaces incorporating international development trends within digital design."
-                  ],
+        "content": " Designing and developing advanced digital user interfaces incorporating international development trends within digital design.",
+
         "knowledge": [
 
                    " Composition and layout of digital design in multimedia production",
@@ -94,9 +89,8 @@
 
     {
         "coreArea": "Interaction",
-        "content": [
-                  "  Equiping students to  model, structure and develop complex digital user interfaces and to handle large data sets."
-                  ],
+        "content": "Equiping students to  model, structure and develop complex digital user interfaces and to handle large data sets.",
+
         "knowledge": [
                    " Understanding the structure and use of the Internet",
                    " Understanding client-server relationships and their impact on digital user interfaces",

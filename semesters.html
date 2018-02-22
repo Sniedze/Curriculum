@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Curriculum KEA</title>
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:500|Shadows+Into+Light|Work+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <header>
@@ -16,23 +17,25 @@
 </header>
 
 <body id="body-semesters">
-    <p class="slogan">This program is built on four core areas: Interaction development, design and visualisation, communication and presentation and business. You learn to work with frontend development, User Interface Design (UI), User Experience Design (UX) and you understanding the business context.</p>
+    <p class="slogan">The programme is a full-time programme equating to two full-year equivalents, and is divided in four semesters.</p>
     <h1>Semester Structure</h1>
     <div id="navigation"></div>
-
     <main></main>
     <template>
     <section id="semesters" class="hidden">
+       <article id="semester-container">
         <h2 class="name">Semester name</h2>
-
+        </article>
         <article id="ects-container" >
             <h2 class="ects-name"> </h2>
+            <div id="ects-structure">
+            <p class="area-name"></p>
             <p class="ects"> </p>
+            </div>
         </article>
         <article id="exams-container" >
             <h2 class="exams-name">Exams</h2>
             <p class="exams"></p>
-
         </article>
     </section>
     </template>
