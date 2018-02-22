@@ -140,13 +140,18 @@ button {
 #placeholder-cores {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: 138px minmax(44vh, 1fr);
+    grid-template-rows: 138px minmax(48vh, 1fr);
     margin-top: 20px;
 }
 
 #placeholder-cores article p {
-    padding: 0 25px;
+    padding: 0 25px 0 25px;
     font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+#placeholder-cores article h2 {
+    margin: 15px;
 }
 
 #content-container {
@@ -230,7 +235,7 @@ ul li {
 #semesters {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: 100px minmax(51vh, 1fr);
+    grid-template-rows: 100px minmax(52vh, 1fr);
     color: black;
     margin-top: 20px;
 }
