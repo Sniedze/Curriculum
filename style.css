@@ -225,7 +225,6 @@ ul li {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: 100px minmax(52vh, 1fr);
-    color: black;
     margin-top: 20px;
 }
 
@@ -273,7 +272,7 @@ ul li {
 }
 
 .area-name ul {
-    padding-left: vw;
+    padding-left: 4vw;
 }
 
 
@@ -376,32 +375,22 @@ p {
     #content-container {
         padding: 0 15px;
     }
-}
-
-
-/*///////////////////////////Semesters////////////////////////*/
-
-#semesters {
-    display: block;
-}
-
-#semesters p {
-    font-size: 1em;
-    padding: 0 20px 0 0;
-}
-
-#semesters h2 {
-    font-size: 1.2em;
-}
-
-h1 {
-    font-size: 1.4em;
-}
-
-.ects ul,
-.area-name ul {
-    padding-left: 25;
-}
-
-
+    /*///////////////////////////Semesters////////////////////////*/
+    #semesters {
+        display: block;
+    }
+    #semesters p {
+        font-size: 1em;
+        padding: 0 20px 0 0;
+    }
+    #semesters h2 {
+        font-size: 1.2em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    .ects ul,
+    .area-name ul {
+        padding-left: 25;
+    }
 }
