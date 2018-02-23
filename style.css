@@ -26,14 +26,17 @@ header {
 
 .indexBoxes {
     width: 21vw;
+    max-height: 20vh;
     text-decoration: none;
     color: black;
-    padding: 10vh;
     margin: 65px;
     margin-top: 30px;
     margin-bottom: 10px;
-    font-size: 4em;
+    font-size: 2.2vw;
     text-align: center;
+    font-family: 'Arima Madurai';
+    line-height: 20vh;
+    vertical-align: middle;
 }
 
 .indexBoxes:first-child {
@@ -42,16 +45,12 @@ header {
 }
 
 .indexBoxes:nth-child(3) {
-    grid-column-start: 3;
     background-color: #CCC79A;
 }
 
 #links-to-pages {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    font-family: 'Arima Madurai';
-    font-weight: lighter;
-    font-size: 0.8em;
 }
 
 #body-home h1 {
@@ -86,7 +85,6 @@ header {
 }
 
 
-
 /*///////////////////////////CORE AREAS////////////////////////*/
 
 #body-cores {
@@ -107,7 +105,7 @@ button {
     border: solid #F6F6F6;
     width: 16vw;
     height: 10vh;
-    font-size: 1.8em;
+    font-size: 1.4vw;
     cursor: pointer;
     background-color: #6FA9B2;
     font-family: 'Arima Madurai';
@@ -232,7 +230,6 @@ ul li {
     font-family: 'Arima Madurai';
     color: black;
     height: auto;
-
 }
 
 .arrow-right {
@@ -320,6 +317,7 @@ ul li {
     padding-left: 4vw;
 }
 
+
 /*///////////////////////////////////   SLOGAN IN ALL PAGES///////////////////////////*/
 
 .slogan {
@@ -393,14 +391,15 @@ p {
         border-right: 60px solid #F6F6F6;
         left: 79%;
     }
-    .coresText{
+    .coresText {
         left: 79.6%;
         font-size: 0.7em;
     }
     /* ////////////////////////////////////////INDEX PAGE STUFF/////////////////*/
     .indexBoxes {
         width: 80vw;
-        padding: 50px 0;
+        line-height: 15vh;
+        max-height: 15vh;
         display: block;
     }
     #links-to-pages a {
@@ -460,18 +459,18 @@ p {
     #semesters {
         display: block;
     }
-    #semesters p {
+    #semesters p:nth-child(2) {
         font-size: 1em;
-        padding: 0 20px 0 0;
+        padding: 0 10px 0 0;
+    }
+    #semesters p:nth-child(1) {
+        font-size: 1em;
+        padding: 0 10px 0 0;
     }
     #semesters h2 {
         font-size: 1.2em;
     }
     h1 {
         font-size: 1.4em;
-    }
-    .ects ul,
-    .area-name ul {
-        padding-left: 25;
     }
 }
